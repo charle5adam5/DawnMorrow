@@ -1,0 +1,31 @@
+h2 {
+    color: #808080;
+}
+
+a {
+    color: #b3f0ff;
+    text-decoration: none;
+}
+a:hover {
+    color: #0077b3;
+    text-decoration: none;
+}
+
+#contact {
+    border: solid 10px #b3f0ff;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+#contact h2 {
+  align-self: center;
+}
+
+
+@media (max-width: 505px) {
+    #contact {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+}

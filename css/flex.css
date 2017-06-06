@@ -1,0 +1,13 @@
+.container {
+  display: inline-block;
+  flex-wrap: wrap;
+}
+.header {
+  display: inline-flex;
+  background-color: #f2f2f2;
+}
+
+.header li {
+  display: inline-flex;
+  justify-content: space-between;
+}

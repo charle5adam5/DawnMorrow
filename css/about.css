@@ -1,0 +1,16 @@
+#bio {
+    margin: 0 auto;
+    width: 60%;
+    font-family: "Lora";
+  }
+  .intro::first-letter {
+    font-size: 2em;
+  }
+img {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 50%;
+    border-radius: 10px;
+  }

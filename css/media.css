@@ -1,0 +1,56 @@
+.two {
+  width: 50%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.two iframe {
+  width: 400px;
+  margin-bottom: 3%;
+}
+
+#videos1 {
+  margin: 1%;
+  background:#b3f0ff;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-self: center;
+  text-align: center;
+}
+
+#videos1 h1 {
+  color: white;
+  background: #0077b3;
+  font-family: "satisfy";
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#videos2 {
+    margin: 1%;
+    background: #b3f0ff;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-self: center;
+    text-align: center;
+}
+
+#videos2 h1 {
+    color: white;
+    background: #0077b3;
+    font-family: "satisfy";
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+@media screen and (max-width: 920px) {
+  .two {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
