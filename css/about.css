@@ -14,3 +14,22 @@ img {
     width: 50%;
     border-radius: 10px;
   }
+.pdf {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  margin: 0 auto;
+}
+.pdf a {
+  color: red;
+  text-decoration: none;
+}
+.pdf img {
+  height: 30%;
+  width: 30%;
+}
+.pdf p {
+text-align: center;
+}
