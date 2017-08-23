@@ -18,7 +18,11 @@ a:hover {
     align-items: flex-start;
 }
 #contact h2 {
-  align-self: center;
+  align-self: flex-start;
+  margin-left: 35%;
+}
+#contact img {
+  margin-bottom: 2%;
 }
 
 
@@ -27,5 +31,8 @@ a:hover {
         display: flex;
         flex-flow: column;
         justify-content: center;
+    }
+    #contact h2 {
+      font-size: .75em;
     }
 }

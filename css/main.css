@@ -88,9 +88,11 @@ footer {
   }
   #header nav ul li {
     display: inline-flex;
+    justify-content: space-around;
     font-size: 1.75em;
     padding-left: 5%;
     padding-right: 5%;
+    margin: 0 auto;
   }
   img {
     height: 50%;

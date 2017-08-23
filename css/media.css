@@ -3,6 +3,12 @@
   display: flex;
   flex-flow: column;
 }
+#background {
+  height: 2200px;
+  background-image: url("../images/dance.JPG");
+  background-size: cover;
+  background-position: center;
+}
 .two {
   display: flex;
   flex-flow: row;
@@ -17,7 +23,7 @@
   border-radius: 8px;
   height: 100px;
   width: 20%;
-  margin-top: 1%;
+  margin-top: 2%;
   margin-left: 5%;
   margin-right: 5%;
   background: #b3f0ff;
@@ -32,9 +38,6 @@
     text-align: center;
 }
 
-.content {
-  display: none;
-}
 
 .drop {
   border: none;
@@ -43,6 +46,9 @@
   color: white;
   width: 20%;
   margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  padding: 2%;
 }
 .drop:hover {
   cursor: pointer;
@@ -53,14 +59,21 @@
   margin: 0 auto;
   margin-top: 5%;
 }
-#videos button {
+.close {
   border: none;
   background: #0077b3;
   color: white;
   width: 560px;
   margin: 0 auto;
+  text-decoration: none;
+}
+.close:hover {
+  cursor: pointer;
 }
 
+.content {
+  display: none;
+}
 
 @media screen and (max-width: 920px) {
   .two {
