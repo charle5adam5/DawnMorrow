@@ -1,5 +1,5 @@
 ///// Home slider /////
-const slider = document.getElementById('slider');
+var slider = document.getElementById('slider');
 
 let images = [
   './images/wall2.jpg',
@@ -25,4 +25,5 @@ function slide() {
   }, 5000);
 }
 slide();
+
 ///// end /////
