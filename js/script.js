@@ -2,7 +2,7 @@
 var slider = document.getElementById('slider');
 
 let images = [
-  './images/wall2.jpg',
+  './images/wall2.JPG',
   './images/sitting.jpg',
   './images/ledge.jpg',
   './images/jump.jpg',
