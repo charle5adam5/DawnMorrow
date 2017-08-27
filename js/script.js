@@ -1,5 +1,5 @@
 ///// Home slider /////
-var slider = document.getElementById('slider');
+const slider = document.getElementById('slider');
 
 let images = [
   './images/wall2.JPG',

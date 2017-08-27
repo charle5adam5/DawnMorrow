@@ -30,4 +30,4 @@ close.forEach(function(item) {
     $(content).hide();
   })
 })
-///// end /////
+///// end var
