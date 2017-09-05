@@ -12,16 +12,16 @@ function slide() {
   let i = 0;
   slider.src = images[i];
   setInterval(() => {
+    slider.className = 'fadeIn';
+    setTimeout(() => {
+      slider.className = '';
+    }, 3999);
     i++;
     slider.src = images[i];
     if (i >= images.length) {
       i = 0;
       slider.src = images[i];
     }
-    slider.className = 'fadeIn';
-    setTimeout(() => {
-      slider.className = '';
-    }, 1000);
   }, 5000);
 }
 slide();
