@@ -1,7 +1,8 @@
-///// Home slider /////
-const slider = document.getElementById('slider');
 
-let images = [
+///// Home slider /////
+var slider = document.getElementById('slider');
+
+var images = [
   './images/wall2.JPG',
   './images/sitting.jpg',
   './images/ledge.jpg',
@@ -9,7 +10,7 @@ let images = [
 ];
 
 function slide() {
-  let i = 0;
+  var i = 0;
   slider.src = images[i];
   setInterval(() => {
     slider.className = 'fadeIn';
