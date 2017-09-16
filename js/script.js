@@ -8,23 +8,32 @@ var images = [
   './images/ledge.jpg',
   './images/jump.jpg',
 ];
+var counter = 0;
+slider.src = images[counter];
 
-function slide() {
-  var i = 0;
-  slider.src = images[i];
-  setInterval(() => {
-    slider.className = 'fadeIn';
-    setTimeout(() => {
-      slider.className = '';
-    }, 3999);
-    i++;
-    slider.src = images[i];
-    if (i >= images.length) {
-      i = 0;
-      slider.src = images[i];
+function imageIncrement () {
+  counter++;
+  if (counter >= images.length) {
+    counter = 0;
+  }
+  return slider.src = images[counter];
+};
+
+function imageFade() {
+    if (slider.className !== 'fadeIn') {
+      slider.className = 'fadeIn';
+      setTimeout(function() {
+        slider.className = '';
+      }, 2999);
     }
-  }, 5000);
-}
-slide();
+};
+
+(function slide() {
+  setInterval(function() {
+    imageIncrement();
+    imageFade();
+  }, 4000);
+})();
+
 
 ///// end /////
