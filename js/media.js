@@ -29,5 +29,5 @@ close.forEach(function(item) {
   item.addEventListener("click", function() {
     $(content).hide();
   })
-})
+});
 ///// end var
