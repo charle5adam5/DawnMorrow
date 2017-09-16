@@ -3,12 +3,7 @@
   display: flex;
   flex-flow: column;
 }
-#background {
-  height: 2200px;
-  background-image: url("../images/dance.JPG");
-  background-size: cover;
-  background-position: center;
-}
+
 .two {
   display: flex;
   flex-flow: row;
