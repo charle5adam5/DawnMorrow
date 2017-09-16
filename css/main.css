@@ -22,6 +22,7 @@
   flex-direction: row;
   justify-content: space-around;
   border-bottom: solid 3px #b3f0ff;
+  width: 60vw;
   margin: 0 auto;
 }
 
