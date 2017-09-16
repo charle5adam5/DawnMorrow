@@ -1,12 +1,12 @@
 ///// Media /////
-const screendance = document.getElementById("screendance");
-const choreography = document.getElementById("choreography");
-const classwork = document.getElementById("classwork");
-const reels = document.getElementById("reels");
-const videos = document.getElementById("videos");
-const content = document.querySelectorAll(".content");
-const button = document.querySelectorAll(".drop");
-const close = document.querySelectorAll(".close");
+var screendance = document.getElementById("screendance");
+var choreography = document.getElementById("choreography");
+var classwork = document.getElementById("classwork");
+var reels = document.getElementById("reels");
+var videos = document.getElementById("videos");
+var content = document.querySelectorAll(".content");
+var button = document.querySelectorAll(".drop");
+var close = document.querySelectorAll(".close");
 
 button[0].addEventListener('click', function() {
   $(content).hide();
