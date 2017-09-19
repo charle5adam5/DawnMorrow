@@ -42,6 +42,7 @@ a:hover {
   h2 {
     display: flex;
     flex-flow: column;
+    font-size: 80%;
   }
 }
 @media screen and (max-width: 430px) {
