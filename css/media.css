@@ -17,13 +17,13 @@
   flex-flow: column;
   justify-content: space-around;
   height: 10em;
-  width: 15em;
+  min-width: 25%;
   background: #b3f0ff;
   border-radius: 10px;
   margin-bottom: 2em;
   margin-left: 1em;
-  margin-left: 1em;
-  font-size: .5em;
+  margin-right: 1em;
+  font-size: .75em;
 }
 .box h1 {
     color: white;
@@ -45,6 +45,11 @@
    opacity: .8;
  }
 
+ .drop:before {
+   content: "\27a4";
+   font-size: 2em;
+ }
+
 #videos {
   display: flex;
   margin: 0 auto;
@@ -58,6 +63,10 @@
   width: auto;
   margin: 0 auto;
   text-decoration: none;
+  padding: .5em;
+}
+.close:before {
+  content: "\2716";
 }
 .close:hover {
   cursor: pointer;
@@ -80,9 +89,14 @@
     height: auto;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
   .box {
-    min-width: 25%;
+    font-size: .6em;
+  }
+}
+@media screen and (max-width: 550px) {
+  .box {
+    width: 10em;
     font-size: .45em;
   }
 }

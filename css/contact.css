@@ -23,7 +23,12 @@ a:hover {
   align-self: flex-start;
   margin-left: 20%;
   font-family: "satisfy", cursive;
+  font-size: 2em;
 }
+#contact p, a {
+  color: pink;
+}
+
 #contact img {
   height: auto;
   width: 30em;
@@ -34,19 +39,25 @@ a:hover {
   #contact img {
     width: 25em;
   }
+  #contact h2 {
+    font-size: 1.75em;
+  }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 575px) {
   #contact img {
     width: 20em;
   }
-  h2 {
+  #contact h2 {
     display: flex;
     flex-flow: column;
-    font-size: 80%;
+    font-size: 1.5em;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 455px) {
     #contact img {
       width: 15em;
+    }
+    #contact h2 {
+      font-size: 1.25em;
     }
 }

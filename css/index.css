@@ -8,14 +8,14 @@
   margin-top: 2em;
 }
 .fadeIn {
-  animation: fadein 3s ease-out;
+  animation: fadein 3s ease-out .05s;
 }
 @keyframes fadein {
   from {
     opacity: 0;
   }
   to {
-    opacitiy: 1;
+    opacity: 1;
   }
 }
 
