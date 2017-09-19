@@ -1,64 +1,61 @@
 #wrapper {
-  width: 100%;
   display: flex;
   flex-flow: column;
+  margin-top: 2em;
+  justify-content: space-around;
+  width: 80%;
 }
 
-.two {
+#boxes {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
-  align-items: center;
 }
 
 .box {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   justify-content: space-around;
-  border-radius: 8px;
-  height: 100px;
-  width: 20%;
-  margin-top: 2%;
-  margin-left: 5%;
-  margin-right: 5%;
+  height: 10em;
+  width: 15em;
   background: #b3f0ff;
-  font-size: 8px;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  margin-left: 1em;
+  margin-left: 1em;
+  font-size: .5em;
 }
 .box h1 {
     color: white;
     background: #0077b3;
-    font-family: "satisfy";
-    padding-top: 2%;
-    padding-bottom: 2%;
+    font-family: "satisfy", cursive;
     text-align: center;
 }
-
-
-.drop {
-  border: none;
+.box a {
   background: #0077b3;
-  border-radius: 8px;
+  border-radius: 10px;
+  padding: .25em;
   color: white;
-  width: 20%;
-  margin: 0 auto;
-  text-decoration: none;
   text-align: center;
-  padding: 2%;
+  margin: 0 auto;
+  width: 30%;
 }
-.drop:hover {
-  cursor: pointer;
-}
+ .box a:hover {
+   cursor: pointer;
+   opacity: .8;
+ }
 
 #videos {
-  width: 55%;
+  display: flex;
   margin: 0 auto;
-  margin-top: 5%;
 }
+
+
 .close {
   border: none;
   background: #0077b3;
   color: white;
-  width: 560px;
+  width: auto;
   margin: 0 auto;
   text-decoration: none;
 }
@@ -68,18 +65,24 @@
 
 .content {
   display: none;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
-@media screen and (max-width: 920px) {
-  .two {
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    align-items: center;
+
+@media screen and (max-width: 750px) {
+  .content {
+    margin-left: 10%;
+    margin-right: 10%;
   }
+  iframe {
+    width: 380px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 450px) {
   .box {
-    width: 80%;
-    margin-bottom: 1%;
+    min-width: 25%;
+    font-size: .45em;
   }
 }

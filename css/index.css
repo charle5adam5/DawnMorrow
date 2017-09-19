@@ -1,8 +1,11 @@
-img {
-  height: 50%;
-  width: 50%;
+
+#slider {
+  border-radius: 10px;
+  height: auto;
+  width: 30em;
   display: block;
   margin: 0 auto;
+  margin-top: 2em;
 }
 .fadeIn {
   animation: fadein 3s ease-out;
@@ -13,5 +16,17 @@ img {
   }
   to {
     opacitiy: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #slider {
+    width: 25em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #slider {
+    width: 20em;
   }
 }

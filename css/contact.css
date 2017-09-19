@@ -16,23 +16,36 @@ a:hover {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
+    margin-top: 2em;
+    width: 80%;
 }
 #contact h2 {
   align-self: flex-start;
-  margin-left: 35%;
+  margin-left: 20%;
+  font-family: "satisfy", cursive;
 }
 #contact img {
-  margin-bottom: 2%;
+  height: auto;
+  width: 30em;
+  margin: 0 auto;
 }
 
-
-@media (max-width: 505px) {
-    #contact {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-    }
-    #contact h2 {
-      font-size: .75em;
+@media screen and (max-width: 650px) {
+  #contact img {
+    width: 25em;
+  }
+}
+@media screen and (max-width: 540px) {
+  #contact img {
+    width: 20em;
+  }
+  h2 {
+    display: flex;
+    flex-flow: column;
+  }
+}
+@media screen and (max-width: 430px) {
+    #contact img {
+      width: 15em;
     }
 }

@@ -1,38 +1,44 @@
 #bio {
-    margin: 0 auto;
-    width: 80%;
-    font-family: "Lora";
-    font-size: 1.25em;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 60%;
+  font-family: "Lora";
+  font-size: 1.25em;
+  margin-top: 2em;
   }
-  #bio p {
-    margin: 0 5% 5% 5%;
-  }
+#bio a {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+#bio p {
+  color: #808080;
+}
+
   .intro::first-letter {
     font-size: 2em;
   }
 
-.main {
-  display: flex;
-  clear: both;
-  justify-content: space-around;
-}
-
   .pdf {
     text-align: center;
     text-decoration: none;
-    width: 10%;
+    width: 10em;
+    height: auto;
     margin: 0 auto;
   }
 .pdf img {
-  width: 100px;
+  width: 5em;
+  height: 5em;
   border-radius: 50%;
-  margin-top: 2%;
 }
 
 .photo {
-  height: 40%;
-  width: 40%;
-  margin: 5%;
+  border: solid 3px #b3f0ff;
+  height: auto;
+  width: 15em;
+  margin: 1em;
 }
 .left {
   float: left;
@@ -43,4 +49,16 @@
 
 footer {
   clear: both;
+}
+
+@media screen and (max-width: 700px) {
+  #bio {
+    width: 80%;
+  }
+  #bio p {
+    font-size: 80%;
+  }
+  .photo {
+    width: 10em;
+  }
 }

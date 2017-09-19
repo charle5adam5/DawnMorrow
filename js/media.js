@@ -8,6 +8,7 @@ var content = document.querySelectorAll(".content");
 var button = document.querySelectorAll(".drop");
 var close = document.querySelectorAll(".close");
 
+
 button[0].addEventListener('click', function() {
   $(content).hide();
   $(screendance).slideDown("slow");
