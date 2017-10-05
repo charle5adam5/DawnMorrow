@@ -24,8 +24,8 @@ function imageFade() {
       slider.className = 'fadeIn';
       setTimeout(function() {
         slider.className = '';
-      }, 3999);
-    }
+      }, 0999);
+  }
 };
 
 (function slide() {
