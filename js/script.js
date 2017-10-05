@@ -20,7 +20,7 @@ function imageIncrement () {
 };
 
 function imageFade() {
-    if (slider.className !== 'fadeIn') {
+    if (slider.className != 'fadeIn') {
       slider.className = 'fadeIn';
       setTimeout(function() {
         slider.className = '';
