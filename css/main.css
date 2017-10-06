@@ -22,7 +22,7 @@ header img {
   margin-bottom: 1em;
 }
 
- div > nav {
+ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
