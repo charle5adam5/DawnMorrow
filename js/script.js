@@ -9,7 +9,7 @@ var images = [
   './images/jump.jpg',
 ];
 
-(function imageFlip() {
+function imageFlip() {
   var counter = 0;
   slider.src = images[counter];
   setInterval(function() {
@@ -25,7 +25,9 @@ var images = [
   }
   slider.src = images[counter];
 }, 3000);
-})();
+}
+
+slider.addEventListener("load", imageFlip());
 
 
 
