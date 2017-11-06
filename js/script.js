@@ -24,7 +24,7 @@ function imageFlip() {
       }, 1000);
   }
   slider.src = images[counter];
-}, 3000);
+}, 4000);
 }
 
 slider.addEventListener("load", imageFlip());
