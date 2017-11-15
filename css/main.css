@@ -15,9 +15,14 @@ header {
   margin: 0 auto;
   margin-top: 1em;
 }
-header img {
-  height: 20em;
-  width: auto;
+
+.logo {
+  width: 80%;
+  height: 10%;
+  max-width: 500px;
+  min-width: 300px;
+  max-height: 300px;
+  min-height: 200px;
   margin: 0 auto;
   margin-bottom: 1em;
 }
@@ -28,12 +33,13 @@ header img {
   justify-content: space-around;
   border-bottom: solid 3px #b3f0ff;
   width: 90%;
+  max-width: 715px;
   margin: 0 auto;
   font-family: "satisfy", cursive;
 }
 
  nav a {
-  font-size: 2em;
+  font-size: 6vw;
   color: #808080;
   text-decoration: none;
 }
@@ -56,26 +62,281 @@ footer {
   width: 30%;
 }
 
-@media screen and (max-width: 700px) {
-  header img {
-    height: 15em;
-    width: auto;
-    margin: 0 auto;
-    margin-bottom: 1em;
-  }
+@media screen and (min-width: 500px) {
   nav a {
-    font-size: 1.75em;
+    font-size: 2em;
   }
 }
 
+
+/*Index style*/
+
+
+
+#slider {
+ border-radius: 10px;
+ height: auto;
+ width: 30em;
+ display: block;
+ margin: 0 auto;
+ margin-top: 2em;
+}
+.fadeIn {
+ animation: fadein 2s ease-out;
+}
+@keyframes fadein {
+ from {
+   opacity: 0;
+ }
+ to {
+   opacity: 1;
+ }
+}
+
+@media screen and (max-width: 700px) {
+ #slider {
+   width: 25em;
+ }
+}
+
 @media screen and (max-width: 550px) {
-  header img {
-    height: 10em;
-    width: auto;
-    margin: 0 auto;
-    margin-bottom: 1em;
+ #slider {
+   width: 20em;
+ }
+}
+
+/*About style*/
+#bio {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 60%;
+  font-family: "Lora";
+  font-size: 1.25em;
+  margin-top: 2em;
   }
-  nav a {
+#bio a {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+#bio p {
+  color: #808080;
+}
+
+  .intro::first-letter {
+    font-size: 2em;
+  }
+
+  .pdf {
+    text-align: center;
+    text-decoration: none;
+    width: 10em;
+    height: auto;
+    margin: 0 auto;
+  }
+.pdf img {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+}
+
+.photo {
+  border: solid 3px #b3f0ff;
+  height: auto;
+  width: 15em;
+  margin: 1em;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+footer {
+  clear: both;
+}
+
+@media screen and (max-width: 700px) {
+  #bio {
+    width: 80%;
+  }
+  #bio p {
+    font-size: 80%;
+  }
+  .photo {
+    width: 10em;
+  }
+}
+
+/*Media style*/
+#wrapper {
+  display: flex;
+  flex-flow: column;
+  margin-top: 2em;
+  justify-content: space-around;
+  width: 80%;
+}
+
+#boxes {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  height: auto;
+  width: 50vw;
+  min-width: 75px;
+  max-width: 150px;
+  min-height: 55px;
+  max-height: 125px;
+  background: #b3f0ff;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.box h1 {
+    color: white;
+    background: #0077b3;
+    font-family: "satisfy", cursive;
+    text-align: center;
+    font-size: 2vw;
+}
+.box a {
+  background: #0077b3;
+  border-radius: 10px;
+  padding: .25em;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2vw;
+  max-width: 20px;
+  max-height: 20px;
+}
+ .box a:hover {
+   cursor: pointer;
+   opacity: .8;
+ }
+
+ .drop:before {
+   content: "\27a4";
+   font-size: 2vw;
+ }
+
+#videos {
+  display: flex;
+  margin: 0 auto;
+}
+
+
+.close {
+  border: none;
+  background: #0077b3;
+  color: white;
+  width: auto;
+  margin: 0 auto;
+  text-decoration: none;
+  padding: .5em;
+}
+.close:before {
+  content: "\2716";
+}
+.close:hover {
+  cursor: pointer;
+}
+
+.content {
+  display: none;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+
+@media screen and (max-width: 750px) {
+  .content {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  iframe {
+    width: 380px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 700px) {
+  .box h1 {
+    font-size: 1em;
+  }
+  .box a {
+    font-size: 1em;
+  }
+  .drop:before {
+    font-size: 1em;
+  }
+}
+
+/*Contact style*/
+
+
+
+#contact {
+    border: solid 10px #b3f0ff;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    margin-top: 2em;
+    width: 80%;
+}
+#contact h2 {
+  color: #808080;
+  align-self: flex-start;
+  margin-left: 20%;
+  font-family: "satisfy", cursive;
+  font-size: 2em;
+}
+#contact a {
+    color: #b3f0ff;
+    text-decoration: none;
+}
+#contact a:hover {
+    color: #0077b3;
+    text-decoration: none;
+}
+#contact img {
+  height: auto;
+  width: 30em;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 650px) {
+  #contact img {
+    width: 25em;
+  }
+  #contact h2 {
+    font-size: 1.75em;
+  }
+}
+@media screen and (max-width: 575px) {
+  #contact img {
+    width: 20em;
+  }
+  #contact h2 {
+    display: flex;
+    flex-flow: column;
     font-size: 1.5em;
   }
+}
+@media screen and (max-width: 455px) {
+    #contact img {
+      width: 15em;
+    }
+    #contact h2 {
+      font-size: 1.25em;
+    }
 }
