@@ -52,6 +52,19 @@ header {
   color: white;
 }
 
+#socialMedia {
+  display: flex;
+  justify-content: space-around;
+}
+#socialMedia a {
+  display: flex;
+  justify-content: space-around;
+}
+#socialMedia img {
+  margin-top: 20%;
+  height: 50px;
+  width: 50px;
+}
 
 footer {
   border-bottom: 2px solid #b3f0ff;
