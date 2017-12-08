@@ -120,11 +120,11 @@ footer {
 
 /*About style*/
 #bio {
-  display: flex;
-  flex-flow: column;
+  display: grid;
+  grid-template-columns: 2;
   justify-content: space-around;
   margin: 0 auto;
-  width: 60%;
+  width: 90%;
   font-family: "Lora";
   font-size: 1.25em;
   margin-top: 2em;
@@ -135,7 +135,14 @@ footer {
   margin: 0 auto;
 }
 #bio p {
+  grid-column-start: 1;
   color: #808080;
+}
+#bio .right {
+  grid-column-start: 2;
+}
+#bio .left {
+  grid-column-start: 1;
 }
 
   .intro::first-letter {
@@ -161,12 +168,7 @@ footer {
   width: 15em;
   margin: 1em;
 }
-.left {
-  float: left;
-}
-.right {
-  float: right;
-}
+
 
 footer {
   clear: both;
@@ -183,6 +185,9 @@ footer {
     width: 10em;
   }
 }
+
+
+
 
 /*Media style*/
 #wrapper {
