@@ -124,7 +124,7 @@ footer {
   grid-template-columns: 2;
   justify-content: space-around;
   margin: 0 auto;
-  width: 90%;
+  width: 70%;
   font-family: "Lora";
   font-size: 1.25em;
   margin-top: 2em;
@@ -165,8 +165,10 @@ footer {
 .photo {
   border: solid 3px #b3f0ff;
   height: auto;
-  width: 15em;
-  margin: 1em;
+  width: 30vw;
+  max-width: 300px;
+  min-width: 150px;
+  margin: 5%;
 }
 
 
@@ -174,15 +176,21 @@ footer {
   clear: both;
 }
 
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 950px) {
   #bio {
-    width: 80%;
+    width: 60%;
   }
   #bio p {
     font-size: 80%;
   }
-  .photo {
-    width: 10em;
+}
+@media screen and (max-width: 700px) {
+  #bio {
+    width: 40%;
+  }
+  #bio p {
+    font-size: 70%;
   }
 }
 
