@@ -124,7 +124,7 @@ footer {
   grid-template-columns: 2;
   justify-content: space-around;
   margin: 0 auto;
-  width: 70%;
+  width: 60%;
   font-family: "Lora";
   font-size: 1.25em;
   margin-top: 2em;
@@ -164,11 +164,19 @@ footer {
 
 .photo {
   border: solid 3px #b3f0ff;
-  height: auto;
-  width: 30vw;
-  max-width: 300px;
-  min-width: 150px;
   margin: 5%;
+}
+.fivethree {
+  height: 15em;
+  width: 9em;
+}
+.threefive {
+  height: 9em;
+  width: 15em;
+}
+.fivefour {
+  height: 15em;
+  width: 12em;
 }
 
 
@@ -178,11 +186,22 @@ footer {
 
 
 @media screen and (max-width: 950px) {
-  #bio {
-    width: 60%;
-  }
   #bio p {
     font-size: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .fivethree {
+    height: 10em;
+    width: 6em;
+  }
+  .threefive {
+    height: 6em;
+    width: 10em;
+  }
+  .fivefour {
+    height: 10em;
+    width: 8em;
   }
 }
 @media screen and (max-width: 700px) {
