@@ -146,7 +146,7 @@ footer {
 
 #CV {
   width: 80px;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-left: 50%;
   margin-right: 50%;
 }
@@ -207,24 +207,24 @@ footer {
 }
 @media screen and (max-width: 700px) {
   #bio {
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 175px 175px;
     grid-gap: 10px;
   }
   #bio p {
     font-size: 10px;
   }
-  /* .fivethree {
-    height: 12em;
-    width: 6em;
+  .fivethree {
+    height: 14em;
+    width: 8em;
   }
   .threefive {
-    height: 6em;
+    height: 8em;
     width: 12em;
   }
   .fivefour {
-    height: 12em;
-    width: 9em;
-  } */
+    height: 14em;
+    width: 11em;
+  }
 }
 
 
