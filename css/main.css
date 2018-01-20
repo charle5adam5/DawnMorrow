@@ -121,22 +121,17 @@ footer {
 /*About style*/
 #bio {
   display: grid;
-  grid-template-columns: 2;
-  justify-content: space-around;
-  margin: 0 auto;
-  width: 60%;
-  font-family: "Lora";
-  font-size: 1.25em;
-  margin-top: 2em;
+  grid-template-columns: 400px 400px;
+  justify-items: center;
+  align-items: center;
   }
-#bio a {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-}
+
 #bio p {
   grid-column-start: 1;
+  font-family: "Lora";
+  font-size: 16px;
   color: #808080;
+  width: 75%;
 }
 #bio .right {
   grid-column-start: 2;
@@ -149,13 +144,18 @@ footer {
     font-size: 2em;
   }
 
-  .pdf {
-    text-align: center;
-    text-decoration: none;
-    width: 10em;
-    height: auto;
-    margin: 0 auto;
-  }
+#CV {
+  width: 80px;
+  margin-top: 5%;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+.pdf {
+  text-align: center;
+  text-decoration: none;
+  width: 10em;
+  height: auto;
+}
 .pdf img {
   width: 5em;
   height: 5em;
@@ -167,16 +167,16 @@ footer {
   margin: 5%;
 }
 .fivethree {
-  height: 15em;
-  width: 9em;
+  height: 18em;
+  width: 12em;
 }
 .threefive {
-  height: 9em;
-  width: 15em;
+  height: 12em;
+  width: 18em;
 }
 .fivefour {
-  height: 15em;
-  width: 12em;
+  height: 18em;
+  width: 15em;
 }
 
 
@@ -185,33 +185,48 @@ footer {
 }
 
 
-@media screen and (max-width: 950px) {
-  #bio p {
-    font-size: 80%;
+@media screen and (max-width: 900px) {
+  #bio {
+    grid-template-columns: 300px 300px;
   }
-}
-@media screen and (max-width: 800px) {
+  #bio p {
+    font-size: 14px;
+  }
   .fivethree {
-    height: 10em;
-    width: 6em;
+    height: 15em;
+    width: 9em;
   }
   .threefive {
-    height: 6em;
-    width: 10em;
+    height: 9em;
+    width: 15em;
   }
   .fivefour {
-    height: 10em;
-    width: 8em;
+    height: 15em;
+    width: 12em;
   }
 }
 @media screen and (max-width: 700px) {
   #bio {
-    width: 40%;
+    grid-template-columns: 200px 200px;
+    grid-gap: 10px;
   }
   #bio p {
-    font-size: 70%;
+    font-size: 10px;
   }
+  /* .fivethree {
+    height: 12em;
+    width: 6em;
+  }
+  .threefive {
+    height: 6em;
+    width: 12em;
+  }
+  .fivefour {
+    height: 12em;
+    width: 9em;
+  } */
 }
+
 
 
 
@@ -331,19 +346,16 @@ footer {
 
 
 #contact {
-    border: solid 10px #b3f0ff;
     display: flex;
     flex-flow: column;
-    align-items: flex-start;
     margin-top: 2em;
     width: 80%;
 }
 #contact h2 {
   color: #808080;
-  align-self: flex-start;
-  margin-left: 20%;
   font-family: "satisfy", cursive;
-  font-size: 2em;
+  text-align: center;
+  font-size: 1.5em;
 }
 #contact a {
     color: #b3f0ff;
@@ -355,33 +367,16 @@ footer {
 }
 #contact img {
   height: auto;
-  width: 30em;
+  width: 20em;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 650px) {
   #contact img {
-    width: 25em;
-  }
-  #contact h2 {
-    font-size: 1.75em;
-  }
-}
-@media screen and (max-width: 575px) {
-  #contact img {
-    width: 20em;
+    width: 15em;
   }
   #contact h2 {
     display: flex;
     flex-flow: column;
-    font-size: 1.5em;
   }
-}
-@media screen and (max-width: 455px) {
-    #contact img {
-      width: 15em;
-    }
-    #contact h2 {
-      font-size: 1.25em;
-    }
 }
