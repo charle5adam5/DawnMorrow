@@ -167,16 +167,16 @@ footer {
   margin: 5%;
 }
 .fivethree {
-  height: 18em;
-  width: 12em;
+  height: 256px;
+  width: 170px;
 }
 .threefive {
-  height: 12em;
-  width: 18em;
+  height: 170px;
+  width: 256px;
 }
 .fivefour {
-  height: 18em;
-  width: 15em;
+  height: 240px;
+  width: 215px;
 }
 
 
@@ -192,7 +192,7 @@ footer {
   #bio p {
     font-size: 14px;
   }
-  .fivethree {
+  /* .fivethree {
     height: 15em;
     width: 9em;
   }
@@ -203,29 +203,31 @@ footer {
   .fivefour {
     height: 15em;
     width: 12em;
-  }
+  } */
 }
 @media screen and (max-width: 700px) {
   #bio {
-    grid-template-columns: 175px 175px;
+    grid-template-columns: 150px 150px;
     grid-gap: 10px;
   }
   #bio p {
     font-size: 10px;
   }
   .fivethree {
-    height: 14em;
-    width: 8em;
+    height: 192px;
+    width: 127px;
   }
   .threefive {
-    height: 8em;
-    width: 12em;
+    height: 127px;
+    width: 192px;
   }
   .fivefour {
-    height: 14em;
-    width: 11em;
+    height: 200px;
+    width: 160px;
   }
 }
+
+
 
 
 
