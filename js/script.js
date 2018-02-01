@@ -9,22 +9,23 @@ var images = [
   './images/jump.jpg',
 ];
 
+
 function imageFlip() {
-  var counter = 0;
+  let counter = 0;
   slider.src = images[counter];
   setInterval(function() {
     counter++;
-    if (counter >= images.length) {
-      counter = 0;
-    }
-    if (slider.className != 'fadeIn') {
+    if(slider.className != 'fadeIn') {
       slider.className = 'fadeIn';
       setTimeout(function() {
         slider.className = '';
       }, 1000);
-  }
-  slider.src = images[counter];
-}, 4000);
+    }
+    if (counter >= images.length) {
+      counter = 0;
+    }
+    slider.src = images[counter];
+  }, 2000);
 }
 
 slider.addEventListener("load", imageFlip());
