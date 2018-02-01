@@ -319,6 +319,12 @@ footer {
     height: auto;
   }
 }
+@media screen and (max-width: 700px) {
+  #boxes {
+    flex-flow: column;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 700px) {
   .box h1 {
     font-size: 1em;
