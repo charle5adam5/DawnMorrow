@@ -8,25 +8,17 @@ var images = [
   './images/ledge.jpg',
   './images/jump.jpg',
 ];
-
+slider.src = images[0];
 
 function imageFlip() {
   let counter = 0;
-  slider.src = images[counter];
   setInterval(function() {
     counter++;
-    images.forEach(item => {
-      if(slider.className != 'fadeIn') {
-        slider.className = 'fadeIn';
-        setTimeout(function() {
-         slider.className = '';
-        }, 1000);
-      }
-    })
-    if (counter >= images.length) {
-      counter = 0;
-    }
     slider.src = images[counter];
+    if(counter >= images.length) {
+      counter = 0;
+      slider.src = images[counter];
+    }
   }, 2000);
 }
 
