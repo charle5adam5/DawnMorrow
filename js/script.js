@@ -15,12 +15,14 @@ function imageFlip() {
   slider.src = images[counter];
   setInterval(function() {
     counter++;
-    if(slider.className != 'fadeIn') {
-      slider.className = 'fadeIn';
-      setTimeout(function() {
-        slider.className = '';
-      }, 1000);
-    }
+    images.forEach(item => {
+      if(slider.className != 'fadeIn') {
+        slider.className = 'fadeIn';
+        setTimeout(function() {
+         slider.className = '';
+        }, 1000);
+      }
+    })
     if (counter >= images.length) {
       counter = 0;
     }
