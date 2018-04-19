@@ -10,6 +10,17 @@ var images = [
 ];
 slider.src = images[0];
 
+
+function slideStyle() {
+  if(slider.className != "fadeIn") {
+    slider.className = "fadeIn";
+  }
+  setTimeout(() => {
+    slider.className = "";
+  }, 1000)
+}
+
+
 function imageFlip() {
   let counter = 0;
   setInterval(function() {
@@ -19,6 +30,7 @@ function imageFlip() {
       counter = 0;
       slider.src = images[counter];
     }
+  slideStyle();
   }, 2000);
 }
 
