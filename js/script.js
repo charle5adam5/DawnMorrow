@@ -20,7 +20,6 @@ function slideStyle() {
   }, 1000)
 }
 
-
 function imageFlip() {
   let counter = 0;
   setInterval(function() {
@@ -30,7 +29,9 @@ function imageFlip() {
       counter = 0;
       slider.src = images[counter];
     }
-  slideStyle();
+  images.forEach(() => {
+    slideStyle();
+  })
   }, 2000);
 }
 
