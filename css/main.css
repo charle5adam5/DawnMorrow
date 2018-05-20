@@ -1,4 +1,8 @@
 
+.home {
+  background: url('../images/blue_background.svg') no-repeat;
+  background-size: cover;
+}
 
 #container {
   display: flex;
@@ -31,7 +35,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-bottom: solid 3px #b3f0ff;
+  border-bottom: solid 3px lightskyblue;
   width: 90%;
   max-width: 715px;
   margin: 0 auto;
@@ -44,12 +48,10 @@ header {
   text-decoration: none;
 }
  nav a:hover {
-  color: pink;
+  opacity: 0.6;
 }
 .current {
-  background: #b3f0ff;
-  padding: .2em;
-  color: white;
+  color: lightskyblue;
 }
 
 #socialMedia {
@@ -67,9 +69,9 @@ header {
 }
 
 footer {
-  border-bottom: 2px solid #b3f0ff;
+  border-bottom: 2px solid lightskyblue;
   font-size: .5em;
-  color: #b3f0ff;
+  color: lightskyblue;
   text-align: center;
   margin: 0 auto;
   width: 30%;
@@ -163,7 +165,7 @@ footer {
 }
 
 .photo {
-  border: solid 3px #b3f0ff;
+  border: solid 3px lightskyblue;
   margin: 5%;
 }
 .fivethree {
@@ -246,7 +248,7 @@ footer {
   max-width: 150px;
   min-height: 55px;
   max-height: 125px;
-  background: #b3f0ff;
+  background: lightskyblue;
   border-radius: 10px;
   margin-bottom: 2em;
   margin-left: 10px;
@@ -354,7 +356,7 @@ footer {
   font-size: 1.5em;
 }
 #contact a {
-    color: #b3f0ff;
+    color: lightskyblue;
     text-decoration: none;
 }
 #contact a:hover {
