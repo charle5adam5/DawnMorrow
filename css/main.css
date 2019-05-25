@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Major+Mono+Display|Merriweather');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 .home {
-  background: url('../images/blue_background.svg') no-repeat;
+  background: url('../images/wall2.JPG') no-repeat;
   background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow: hidden;
 }
 
 #container {
@@ -13,48 +24,94 @@
   height: 100%;
 }
 
-header {
+.home-name {
+  max-width: 100px;
+  margin-bottom: 20px;
+  font-family: 'Major Mono Display', monospace;
+}
+.name {
+  max-width: 100px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Major Mono Display', monospace;
+}
+
+.home-header {
+  position: relative;
+  top: 10vh;
+  left: 20vw;
   display: flex;
+  flex-flow: column;
   justify-content: space-around;
-  margin: 0 auto;
-  margin-top: 1em;
+  align-items: flex-start;
 }
-
-.logo {
-  width: 80%;
-  height: 10%;
-  max-width: 500px;
-  min-width: 300px;
-  max-height: 300px;
-  min-height: 200px;
-  margin: 0 auto;
-  margin-bottom: 1em;
-}
-
- nav {
+.header {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border-bottom: solid 3px lightskyblue;
-  width: 90%;
-  max-width: 715px;
-  margin: 0 auto;
-  font-family: "satisfy", cursive;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: white;
+}
+nav {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ font-family: 'Dancing Script', cursive;
+}
+.nav a {
+  margin: 10px 20px;
 }
 
- nav a {
-  font-size: 6vw;
-  color: #808080;
-  text-decoration: none;
+.home-nav {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ font-family: 'Dancing Script', cursive;
+ font-size: 1em;
 }
- nav a:hover {
-  opacity: 0.6;
+.home-nav a {
+ margin-bottom: 10px;
+ color: #00FFFF;
+ text-decoration: none;
+ 
+}
+
+nav a {
+ color: #00FFFF;
+ text-decoration: none;
+}
+
+nav a:hover {
+ color: pink;
+ transition: color .5s;
 }
 .current {
-  color: lightskyblue;
+ color: pink;
 }
 
+@media screen and (min-width: 1000px) {
+  .home-nav {
+    flex-flow: row;
+  }
+  .home-nav a {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    flex-flow: column;
+  }
+}
+
+
+
+
 #socialMedia {
+  position: absolute;
+  bottom: 10px;
   display: flex;
   justify-content: space-around;
 }
@@ -69,7 +126,9 @@ header {
 }
 
 footer {
-  border-bottom: 2px solid lightskyblue;
+  position: absolute;
+  bottom: 10px;
+  border-bottom: 2px solid #00FFFF;
   font-size: .5em;
   color: lightskyblue;
   text-align: center;
@@ -120,17 +179,25 @@ footer {
  }
 }
 
+.bg {
+  background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(90deg, #FFFFFF, #FFF5EE);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(90deg, #FFFFFF, #FFF5EE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 /*About style*/
 #bio {
   display: grid;
   grid-template-columns: 400px 400px;
   justify-items: center;
   align-items: center;
+  margin-bottom: 20px;
   }
 
 #bio p {
   grid-column-start: 1;
-  font-family: "Lora";
+  font-family: 'Merriweather', serif;
   font-size: 16px;
   color: #808080;
   width: 75%;
@@ -165,7 +232,7 @@ footer {
 }
 
 .photo {
-  border: solid 3px lightskyblue;
+  box-shadow: 4px 4px 0px #00ffff;
   margin: 5%;
 }
 .fivethree {
@@ -232,83 +299,24 @@ footer {
   width: 80%;
 }
 
-#boxes {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-}
-
-.box {
-  display: flex;
-  flex-flow: column;
-  justify-content: space-around;
-  height: auto;
-  width: 50vw;
-  min-width: 75px;
-  max-width: 150px;
-  min-height: 55px;
-  max-height: 125px;
-  background: lightskyblue;
-  border-radius: 10px;
-  margin-bottom: 2em;
-  margin-left: 10px;
-  margin-right: 10px;
-}
 .box h1 {
-    color: white;
-    background: #0077b3;
-    font-family: "satisfy", cursive;
-    text-align: center;
-    font-size: 2vw;
-}
-.box a {
-  background: #0077b3;
-  border-radius: 10px;
-  padding: .25em;
-  color: white;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 2vw;
-  max-width: 20px;
-  max-height: 20px;
-}
- .box a:hover {
-   cursor: pointer;
-   opacity: .8;
- }
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-family: 'Merriweather', serif;
 
- .drop:before {
-   content: "\27a4";
-   font-size: 2vw;
- }
+}
 
-#videos {
+.videos {
   display: flex;
-  margin: 0 auto;
+  justify-content: space-between;
+  width: 90%;
+  overflow-x: scroll;
+  align-self: flex-start;
 }
+ .videos iframe {
+   margin: 50px;
+ }
 
-
-.close {
-  border: none;
-  background: #0077b3;
-  color: white;
-  width: auto;
-  margin: 0 auto;
-  text-decoration: none;
-  padding: .5em;
-}
-.close:before {
-  content: "\2716";
-}
-.close:hover {
-  cursor: pointer;
-}
-
-.content {
-  display: none;
-  margin-left: 20%;
-  margin-right: 20%;
-}
 
 
 @media screen and (max-width: 750px) {
@@ -346,21 +354,25 @@ footer {
 #contact {
     display: flex;
     flex-flow: column;
+    justify-content: space-around;
+    align-items: flex-start;
     margin-top: 2em;
-    width: 80%;
+    width: 100%;
+    min-height: 75vh;
 }
 #contact h2 {
   color: #808080;
-  font-family: "satisfy", cursive;
+  font-family: 'Merriweather', serif;
   text-align: center;
+  margin-left: 20vw;
   font-size: 1.5em;
 }
 #contact a {
-    color: lightskyblue;
+    color: #00FFFF;
     text-decoration: none;
 }
 #contact a:hover {
-    color: #0077b3;
+    color: pink;
     text-decoration: none;
 }
 #contact img {
@@ -375,6 +387,10 @@ footer {
   }
   #contact h2 {
     display: flex;
+    align-self: center;
+    justify-content: space-around;
+    align-items: center;
     flex-flow: column;
+    margin-left: 0px;
   }
 }
